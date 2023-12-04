@@ -52,7 +52,7 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.Deepika-Attri"
-                artifactId = "storyview"
+                artifactId = "StoryView"
                 version = "1.0.0"
             }
         }
