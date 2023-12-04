@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profileIv"
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_30dp"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginVertical="@dimen/dimen_8dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/ic_user_placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/titleTV"
+        style="@style/TextAppearance.BodyMedium.Bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_10dp"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/dimen_12sp"
+        app:layout_constraintBottom_toTopOf="@id/postIv"
+        app:layout_constraintLeft_toRightOf="@+id/profileIv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/text_color" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/postIv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_300dp"
+        android:layout_marginVertical="@dimen/dimen_12dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profileIv"
+        app:shapeAppearanceOverlay="@style/ThumbnailShape" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/notificationIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postIv"
+        app:tint="@color/text_color"
+        app:srcCompat="@drawable/ic_heart" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/commentIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/notificationIv"
+        app:layout_constraintTop_toBottomOf="@id/postIv"
+        app:tint="@color/text_color"
+        app:srcCompat="@drawable/ic_chat" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/shareIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/commentIv"
+        app:layout_constraintTop_toBottomOf="@id/postIv"
+        app:tint="@color/text_color"
+        app:srcCompat="@drawable/ic_send" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/saveIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_12dp"
+        android:contentDescription="@string/app_name"
+        android:padding="@dimen/dimen_4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/postIv"
+        app:tint="@color/text_color"
+        app:srcCompat="@drawable/ic_bookmark" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
