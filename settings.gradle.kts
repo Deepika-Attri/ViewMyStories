@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ViewMyStories"
 include(":app")
-include(":StoryView")
+include(":storyview")
