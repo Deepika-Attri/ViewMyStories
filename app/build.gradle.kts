@@ -56,11 +56,7 @@ dependencies {
     /* glide */
     implementation("com.github.bumptech.glide:glide:4.16.0")
 
-    /* exoplayer */
-//    implementation("com.google.android.exoplayer:exoplayer:2.19.1")
-//    implementation("com.google.android.exoplayer:exoplayer-ui:2.19.1")
-
-    // media3 formally exo Player
+    // media3 exo Player
     implementation("androidx.media3:media3-exoplayer:1.2.0")
     implementation("androidx.media3:media3-exoplayer-dash:1.2.0")
     implementation("androidx.media3:media3-ui:1.2.0")

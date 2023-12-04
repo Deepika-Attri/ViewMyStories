@@ -53,7 +53,7 @@ afterEvaluate {
 
                 groupId = "com.github.Deepika-Attri"
                 artifactId = "StoryView"
-                version = "1.0.1"
+                version = "1.0.2"
             }
         }
     }
